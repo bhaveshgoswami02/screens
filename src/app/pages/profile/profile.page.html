@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-avatar slot="start">
+              <img
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80">
+            </ion-avatar>
+            <ion-label>
+              <h2><b>Maryse van Dijk</b></h2>
+              <h3>Recruiter</h3>
+              <h3>Exploring since 2020</h3>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="w-100" style="border-bottom: 2px solid #000;">
+          Notify me
+        </div>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>When i recieve points</ion-label>
+            <ion-toggle slot="end" checked></ion-toggle>
+          </ion-item>
+          <ion-item>
+            <ion-label>When new earners get added</ion-label>
+            <ion-toggle slot="end" checked></ion-toggle>
+          </ion-item>
+          <ion-item>
+            <ion-label>When new items get added</ion-label>
+            <ion-toggle slot="end" checked></ion-toggle>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-tab></app-tab>
+</ion-content>

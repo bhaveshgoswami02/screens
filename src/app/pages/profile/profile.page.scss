@@ -1,0 +1,13 @@
+ion-toggle::before {
+    position: absolute;
+
+    top: 14px;
+    left: 18px;
+
+    content: "ON";
+
+    color: white;
+    font-size: 8px;
+
+    z-index: 1;
+}

@@ -1,0 +1,40 @@
+ion-content{
+    --ion-background-color: #fff
+}
+
+// ion-title {
+//     border-top: 1px solid #000;
+// }
+
+ion-header {
+    border-radius: 25px 25px 0 0 ;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sub-title {
+    color: var(--ion-color-secondary-contrast)!important;
+    font-size: 12px;
+    text-align: right;
+}
+
+.br {
+    margin-top: 10px;
+    background-color: var(--ion-color-secondary-contrast);
+    width: 100%;
+    height: 2px;
+}
+
+.submit-btn {
+    border-radius: none!important;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.back-btn {
+    font-size: 20px;
+}

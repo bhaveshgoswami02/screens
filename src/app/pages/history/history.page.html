@@ -1,0 +1,128 @@
+<ion-header>
+  <ion-toolbar class="history-header">
+    <!-- <ion-title>Points</ion-title> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3">
+          <ion-card [ngClass]="{'top-tab-active': tab == 'available'}" (click)="changeTab('available')">
+            <ion-card-header class="text-center px-0 py-2">
+              <ion-card-title class="point-title">2</ion-card-title>
+              <ion-card-subtitle class="point-subTitle p-0 m-0">available</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3">
+          <ion-card [ngClass]="{'top-tab-active': tab == 'pending'}" (click)="changeTab('pending')">
+            <ion-card-header class="text-center px-0 py-2">
+              <ion-card-title class="point-title">100</ion-card-title>
+              <ion-card-subtitle class="point-subTitle p-0 m-0">pending</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3">
+          <ion-card [ngClass]="{'top-tab-active': tab == 'recieved'}" (click)="changeTab('recieved')">
+            <ion-card-header class="text-center px-0 py-2">
+              <ion-card-title class="point-title">10</ion-card-title>
+              <ion-card-subtitle class="point-subTitle p-0 m-0">recieved</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3">
+          <ion-card [ngClass]="{'top-tab-active': tab == 'sent'}" (click)="changeTab('sent')">
+            <ion-card-header class="text-center px-0 py-2">
+              <ion-card-title class="point-title">0</ion-card-title>
+              <ion-card-subtitle class="point-subTitle p-0 m-0">sent</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h3><b>History</b></h3>
+      </div>
+    </div>
+  </div>
+  <ion-grid *ngIf="tab != 'sent'">
+    <ion-row class="my-2">
+      <ion-col class="left-card-border text-center py-auto" size="2">
+        <p class="py-auto">1</p>
+      </ion-col>
+      <ion-col class="right-card-border" size="10">
+        <b>Welcome to LINKIT Loyality</b>
+        <div class="d-flex position-relative">
+          <p class="mb-0">received on 15-03-2021</p>
+          <ion-icon class="right-arrow" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="my-2">
+      <ion-col class="left-card-border text-center py-auto" size="2">
+        <p class="py-auto">1</p>
+      </ion-col>
+      <ion-col class="right-card-border" size="10">
+        <b>Welcome to LINKIT Loyality</b>
+        <div class="d-flex position-relative">
+          <p class="mb-0">received on 15-03-2021</p>
+          <ion-icon class="right-arrow" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="my-2">
+      <ion-col class="left-card-border text-center py-auto" size="2">
+        <p class="py-auto">1</p>
+      </ion-col>
+      <ion-col class="right-card-border" size="10">
+        <b>Welcome to LINKIT Loyality</b>
+        <div class="d-flex position-relative">
+          <p class="mb-0">received on 15-03-2021</p>
+          <ion-icon class="right-arrow" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="my-2">
+      <ion-col class="left-card-border text-center py-auto" size="2">
+        <p class="py-auto">1</p>
+      </ion-col>
+      <ion-col class="right-card-border" size="10">
+        <b>Welcome to LINKIT Loyality</b>
+        <div class="d-flex position-relative">
+          <p class="mb-0">received on 15-03-2021</p>
+          <ion-icon class="right-arrow" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="my-2">
+      <ion-col class="left-card-border text-center py-auto" size="2">
+        <p class="py-auto">1</p>
+      </ion-col>
+      <ion-col class="right-card-border" size="10">
+        <b>Welcome to LINKIT Loyality</b>
+        <div class="d-flex position-relative">
+          <p class="mb-0">received on 15-03-2021</p>
+          <ion-icon class="right-arrow" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </ion-col>
+      <div class="col-12 text-center close-btn">
+        <ion-icon size="large" name="close-circle-outline"></ion-icon>
+      </div>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid *ngIf="tab == 'sent'">
+    <ion-row style="height: 60vh;">
+      <ion-col size="12" class="my-auto">
+        <div class="text-center">
+          <ion-icon class="sad-icon" name="sad-outline"></ion-icon>
+          <p>Nothing to <br> see here (yet)</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

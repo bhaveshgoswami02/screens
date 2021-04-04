@@ -1,0 +1,45 @@
+.history-header {
+    --background: #CECECE!important;
+}
+
+.point-title {
+    font-size: 18px;
+}
+
+.point-subTitle {
+    font-size: 12px;
+}
+
+.top-tab-active {
+    background-color: var(--ion-color-secondary);
+    .point-title {
+        color: var(--ion-color-secondary-contrast)!important;
+    }
+    .point-subTitle {
+        color: var(--ion-color-secondary-contrast)!important;
+    }
+}
+
+.left-card-border {
+    border: 1px solid #BDBDBD;
+    border-radius: 5px 0 0 5px;
+}
+
+.right-card-border {
+    border: 1px solid #BDBDBD;
+    border-radius: 0 5px 5px 0;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    bottom: 0;
+}
