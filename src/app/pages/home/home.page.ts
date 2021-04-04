@@ -14,6 +14,7 @@ export class HomePage implements OnInit {
   }
 
   nextPage() {
+    console.log("run")
     this.router.navigateByUrl("/new-in-shop")
   }
 
